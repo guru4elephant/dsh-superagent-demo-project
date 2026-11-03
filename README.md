@@ -1,10 +1,10 @@
 # Task Board Demo
 
-A tiny task board used to excercise the dsh-superagent multi-developer workflow.
+A tiny task board used to exercise the dsh-superagent multi-developer workflow.
 
 ## Run
 
-Open `index.html` in a browser. No build step is requried.
+Open `index.html` in a browser. No build step is required.
 
 ## Files
 
