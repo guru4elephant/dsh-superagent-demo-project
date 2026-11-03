@@ -1,0 +1,79 @@
+:root {
+  --bg: #f7f7f8;
+  --surface: #ffffff;
+  --border: #e2e2ea;
+  --text: #1a1a22;
+  --muted: #5a5a6a;
+  --accent: #3b6ef5;
+}
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
+}
+
+.site-header {
+  padding: 32px 24px 16px;
+}
+
+.site-header h1 {
+  margin: 0;
+  font-size: 28px;
+}
+
+.tagline {
+  color: var(--muted);
+  margin: 4px 0 0;
+}
+
+main {
+  padding: 0 24px 48px;
+}
+
+.panel {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 20px;
+  max-width: 560px;
+}
+
+.task-list {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 16px;
+}
+
+.task-list li {
+  padding: 14px 8px;
+  border-bottom: 1px solid var(--border);
+}
+
+.task-list li:last-child {
+  border-bottom: none;
+}
+
+#add-form {
+  display: flex;
+  gap: 8px;
+}
+
+#task-input {
+  flex: 1;
+  padding: 8px 10px;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  font-size: 14px;
+}
+
+button {
+  background: var(--accent);
+  color: #fff;
+  border: 0;
+  border-radius: 6px;
+  padding: 8px 16px;
+  font-size: 14px;
+  cursor: pointer;
+}
