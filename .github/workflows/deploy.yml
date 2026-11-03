@@ -1,7 +1,10 @@
 name: Deploy
 
+# 只有 CI 在 main 上跑绿之后才部署；手动触发用于补发。
 on:
-  push:
+  workflow_run:
+    workflows: [CI]
+    types: [completed]
     branches: [main]
   workflow_dispatch:
 
@@ -17,21 +20,44 @@ concurrency:
 jobs:
   deploy:
     name: Publish to GitHub Pages
+    # workflow_run 触发时要求 CI 成功；手动触发时直接放行
+    if: >-
+      github.event_name == 'workflow_dispatch' ||
+      github.event.workflow_run.conclusion == 'success'
     runs-on: ubuntu-latest
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
     steps:
       - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.event.workflow_run.head_sha || github.sha }}
 
       - name: Stamp build info
         run: |
-          cat >> index.html <<HTML
-          <!-- deployed: $(date -u +%Y-%m-%dT%H:%M:%SZ) from ${GITHUB_SHA} -->
-          HTML
-          echo "stamped ${GITHUB_SHA}"
+          SHA="${{ github.event.workflow_run.head_sha || github.sha }}"
+          STAMP=$(date -u +%Y-%m-%dT%H:%M:%SZ)
+          python3 - "$SHA" "$STAMP" <<'PY'
+          import sys
+          sha, stamp = sys.argv[1], sys.argv[2]
+          banner = (
+            '<div style="position:fixed;bottom:0;left:0;right:0;background:#1a1a22;'
+            'color:#9898a8;font:11px/1.6 ui-monospace,Menlo,monospace;padding:6px 12px;'
+            'display:flex;gap:1rem;flex-wrap:wrap">'
+            '<span style="color:#1a9e5a">● GitHub Pages</span>'
+            f'<span>commit <b style="color:#fff">{sha[:8]}</b></span>'
+            f'<span style="margin-left:auto">{stamp}</span>'
+            '</div>'
+          )
+          html = open('index.html', encoding='utf-8').read()
+          open('index.html', 'w', encoding='utf-8').write(
+              html.replace('</body>', banner + '\n</body>'))
+          print('stamped', sha[:8])
+          PY
 
       - uses: actions/configure-pages@v5
+        with:
+          enablement: true
       - uses: actions/upload-pages-artifact@v3
         with:
           path: .
