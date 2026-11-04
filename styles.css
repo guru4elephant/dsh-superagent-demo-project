@@ -208,6 +208,7 @@ main {
   padding: 14px 12px 14px 30px;
   border-bottom: 1px solid var(--row-border);
   border-radius: 8px;
+  overflow-wrap: anywhere;
   transition: background-color 140ms ease, box-shadow 140ms ease;
 }
 
