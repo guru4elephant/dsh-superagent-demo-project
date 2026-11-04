@@ -88,8 +88,8 @@ METRICS = """
 """
 
 
-def open_page(browser, root, viewport):
-    page = browser.new_page(viewport=viewport)
+def open_page(browser, root, viewport, color_scheme='light'):
+    page = browser.new_page(viewport=viewport, color_scheme=color_scheme)
     page.goto((root / 'index.html').as_uri())
     page.evaluate('localStorage.clear()')
     page.reload()
@@ -106,11 +106,12 @@ def submit(page, titles):
     page.wait_for_timeout(100)
 
 
-def run_scenario(browser, root, viewport, titles, capture):
-    page = open_page(browser, root, viewport)
+def run_scenario(browser, root, viewport, titles, capture, color_scheme='light'):
+    page = open_page(browser, root, viewport, color_scheme)
     submit(page, titles)
     metrics = page.evaluate(METRICS)
-    page.screenshot(path=str(capture), full_page=False)
+    if capture is not None:
+        page.screenshot(path=str(capture), full_page=False)
     page.close()
     return metrics
 
@@ -210,64 +211,76 @@ def main():
             for viewport_name, size in VIEWPORTS.items():
                 viewport = {'width': size[0], 'height': size[1]}
                 for scenario, titles in SCENARIOS.items():
-                    capture = OUT / 'raw' / f'{label}-{viewport_name}-{scenario}.png'
-                    metrics = run_scenario(browser, root, viewport, titles, capture)
-                    results['runs'].append({
-                        'revision': label,
-                        'viewport': viewport_name,
-                        'viewportSize': viewport,
-                        'scenario': scenario,
-                        'capture': capture.name,
-                        **metrics,
-                    })
+                    for scheme in ('light', 'dark'):
+                        capture = None
+                        if scheme == 'light':
+                            capture = (OUT / 'raw'
+                                       / f'{label}-{viewport_name}-{scenario}-{scheme}.png')
+                        metrics = run_scenario(browser, root, viewport, titles,
+                                               capture, scheme)
+                        results['runs'].append({
+                            'revision': label,
+                            'viewport': viewport_name,
+                            'viewportSize': viewport,
+                            'scenario': scenario,
+                            'colorScheme': scheme,
+                            'capture': capture.name if capture else None,
+                            **metrics,
+                        })
         browser.close()
 
     (OUT / 'results.json').write_text(json.dumps(results, indent=2) + '\n')
 
-    by_key = {(r['revision'], r['viewport'], r['scenario']): r for r in results['runs']}
+    by_key = {(r['revision'], r['viewport'], r['scenario'], r['colorScheme']): r
+              for r in results['runs']}
     if BASELINE:
         for viewport_name in VIEWPORTS:
-            for scenario in ('unbroken-200', 'unbroken-500', 'long-url'):
-                before = by_key[('baseline', viewport_name, scenario)]
-                after = by_key[('after', viewport_name, scenario)]
+            for scheme in ('light',):
+                for scenario in ('unbroken-200', 'unbroken-500', 'long-url'):
+                    before = by_key[('baseline', viewport_name, scenario, scheme)]
+                    after = by_key[('after', viewport_name, scenario, scheme)]
+                    sheet(
+                        f'{viewport_name} viewport '
+                        f'({VIEWPORTS[viewport_name][0]}px wide) -- '
+                        f'{scenario} title, {scheme} theme',
+                        OUT / 'raw' / f'baseline-{viewport_name}-{scenario}-{scheme}.png',
+                        OUT / 'raw' / f'after-{viewport_name}-{scenario}-{scheme}.png',
+                        f"Before -- main @ {results['baselineSha']} | {scheme} theme",
+                        f"After -- branch @ {results['currentSha']} | {scheme} theme",
+                        OUT / f'comparison-{viewport_name}-{scenario}-{scheme}.png',
+                        (f"document scrollWidth {before['documentScrollWidth']}px vs "
+                         f"{before['viewportWidth']}px viewport; horizontal scroll "
+                         f"{'YES' if before['horizontalScroll'] else 'no'}; "
+                         f"item overflows its box: "
+                         f"{'yes' if before['items'][-1]['overflowsOwnBox'] else 'no'}"),
+                        (f"document scrollWidth {after['documentScrollWidth']}px vs "
+                         f"{after['viewportWidth']}px viewport; horizontal scroll "
+                         f"{'YES' if after['horizontalScroll'] else 'no'}; "
+                         f"item overflows its box: "
+                         f"{'yes' if after['items'][-1]['overflowsOwnBox'] else 'no'}"),
+                    )
+                # Short titles must be unchanged in both themes.
+                base_short = (OUT / 'raw'
+                              / f'baseline-{viewport_name}-short-{scheme}.png')
+                after_short = (OUT / 'raw'
+                               / f'after-{viewport_name}-short-{scheme}.png')
+                diff = ImageChops.difference(
+                    Image.open(base_short).convert('RGB'),
+                    Image.open(after_short).convert('RGB'))
+                results.setdefault('shortTitlePixelDiff', {}).setdefault(
+                    viewport_name, {})[scheme] = (
+                        list(diff.getbbox()) if diff.getbbox() else None)
                 sheet(
-                    f'{viewport_name} viewport ({VIEWPORTS[viewport_name][0]}px wide) '
-                    f'-- {scenario} title',
-                    OUT / 'raw' / f'baseline-{viewport_name}-{scenario}.png',
-                    OUT / 'raw' / f'after-{viewport_name}-{scenario}.png',
-                    f"Before -- main @ {results['baselineSha']} | viewport capture",
-                    f"After -- branch @ {results['currentSha']} | viewport capture",
-                    OUT / f'comparison-{viewport_name}-{scenario}.png',
-                    (f"document scrollWidth {before['documentScrollWidth']}px vs "
-                     f"{before['viewportWidth']}px viewport; horizontal scroll "
-                     f"{'YES' if before['horizontalScroll'] else 'no'}; "
-                     f"item overflows its box: "
-                     f"{'yes' if before['items'][-1]['overflowsOwnBox'] else 'no'}"),
-                    (f"document scrollWidth {after['documentScrollWidth']}px vs "
-                     f"{after['viewportWidth']}px viewport; horizontal scroll "
-                     f"{'YES' if after['horizontalScroll'] else 'no'}; "
-                     f"item overflows its box: "
-                     f"{'yes' if after['items'][-1]['overflowsOwnBox'] else 'no'}"),
+                    f'{viewport_name} viewport '
+                    f'({VIEWPORTS[viewport_name][0]}px wide) -- '
+                    f'normal short titles, {scheme} theme',
+                    base_short, after_short,
+                    f"Before -- main @ {results['baselineSha']} | {scheme} theme",
+                    f"After -- branch @ {results['currentSha']} | {scheme} theme",
+                    OUT / f'comparison-{viewport_name}-short-{scheme}.png',
+                    'seeded short titles; layout unchanged',
+                    'seeded short titles; layout unchanged',
                 )
-            # Short titles must be unchanged: a pixel diff on the same scenario.
-            base_short = OUT / 'raw' / f'baseline-{viewport_name}-short.png'
-            after_short = OUT / 'raw' / f'after-{viewport_name}-short.png'
-            diff = ImageChops.difference(
-                Image.open(base_short).convert('RGB'),
-                Image.open(after_short).convert('RGB'))
-            results.setdefault('shortTitlePixelDiff', {})[viewport_name] = {
-                'diffBBox': list(diff.getbbox()) if diff.getbbox() else None,
-            }
-            sheet(
-                f'{viewport_name} viewport ({VIEWPORTS[viewport_name][0]}px wide) '
-                f'-- normal short titles',
-                base_short, after_short,
-                f"Before -- main @ {results['baselineSha']}",
-                f"After -- branch @ {results['currentSha']}",
-                OUT / f'comparison-{viewport_name}-short.png',
-                'seeded short titles; layout unchanged',
-                'seeded short titles; layout unchanged',
-            )
 
     (OUT / 'results.json').write_text(json.dumps(results, indent=2) + '\n')
 
@@ -278,13 +291,15 @@ def main():
             f"scrollWidth={r['documentScrollWidth']:5} "
             f"viewport={r['viewportWidth']:5} "
             f"hscroll={str(r['horizontalScroll']):5} "
+            f"theme={r['colorScheme']:5} "
             f"panelW={r['panel']['width']:.0f} "
             f"itemH={last.get('height', 0):.0f} "
             f"lines={last.get('lineBoxes')} "
             f"overflowWrap={last.get('overflowWrap')}"
         )
-    for viewport_name, diff in results.get('shortTitlePixelDiff', {}).items():
-        print(f"short-title pixel diff {viewport_name}: {diff['diffBBox']}")
+    for viewport_name, per_scheme in results.get('shortTitlePixelDiff', {}).items():
+        for scheme, bbox in per_scheme.items():
+            print(f"short-title pixel diff {viewport_name} {scheme}: {bbox}")
     print('evidence written to', OUT)
     return 0
 

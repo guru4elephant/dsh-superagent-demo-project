@@ -1,7 +1,7 @@
 {
   "currentDir": "/root/.dsh/state/superagent/work/wrap-long-task-titles-a6ae71c396f5",
   "currentSha": "7209d83",
-  "baselineDir": "/tmp/evidence-wt",
+  "baselineDir": "/tmp/baseline-main",
   "baselineSha": "6fb944c",
   "longUnbrokenChars": 500,
   "longUrlChars": 420,
@@ -14,7 +14,79 @@
         "height": 812
       },
       "scenario": "short",
-      "capture": "baseline-mobile-short.png",
+      "colorScheme": "light",
+      "capture": "baseline-mobile-short-light.png",
+      "viewportWidth": 375,
+      "viewportHeight": 812,
+      "documentScrollWidth": 375,
+      "documentScrollHeight": 812,
+      "horizontalScroll": false,
+      "panel": {
+        "x": 24,
+        "y": 157.5,
+        "width": 327,
+        "height": 335
+      },
+      "panelScrollWidth": 325,
+      "panelClientWidth": 325,
+      "bodyScrollWidth": 375,
+      "items": [
+        {
+          "chars": 23,
+          "scrollWidth": 281,
+          "clientWidth": 281,
+          "overflowsOwnBox": false,
+          "height": 51,
+          "lineBoxes": 1,
+          "overflowWrap": "normal",
+          "wordBreak": "normal",
+          "whiteSpace": "normal"
+        },
+        {
+          "chars": 23,
+          "scrollWidth": 281,
+          "clientWidth": 281,
+          "overflowsOwnBox": false,
+          "height": 51,
+          "lineBoxes": 1,
+          "overflowWrap": "normal",
+          "wordBreak": "normal",
+          "whiteSpace": "normal"
+        },
+        {
+          "chars": 23,
+          "scrollWidth": 281,
+          "clientWidth": 281,
+          "overflowsOwnBox": false,
+          "height": 51,
+          "lineBoxes": 1,
+          "overflowWrap": "normal",
+          "wordBreak": "normal",
+          "whiteSpace": "normal"
+        },
+        {
+          "chars": 23,
+          "scrollWidth": 281,
+          "clientWidth": 281,
+          "overflowsOwnBox": false,
+          "height": 50,
+          "lineBoxes": 1,
+          "overflowWrap": "normal",
+          "wordBreak": "normal",
+          "whiteSpace": "normal"
+        }
+      ]
+    },
+    {
+      "revision": "baseline",
+      "viewport": "mobile",
+      "viewportSize": {
+        "width": 375,
+        "height": 812
+      },
+      "scenario": "short",
+      "colorScheme": "dark",
+      "capture": null,
       "viewportWidth": 375,
       "viewportHeight": 812,
       "documentScrollWidth": 375,
@@ -84,7 +156,68 @@
         "height": 812
       },
       "scenario": "unbroken-500",
-      "capture": "baseline-mobile-unbroken-500.png",
+      "colorScheme": "light",
+      "capture": "baseline-mobile-unbroken-500-light.png",
+      "viewportWidth": 375,
+      "viewportHeight": 812,
+      "documentScrollWidth": 5189,
+      "documentScrollHeight": 812,
+      "horizontalScroll": true,
+      "panel": {
+        "x": 24,
+        "y": 157.5,
+        "width": 327,
+        "height": 284
+      },
+      "panelScrollWidth": 5164,
+      "panelClientWidth": 325,
+      "bodyScrollWidth": 5189,
+      "items": [
+        {
+          "chars": 23,
+          "scrollWidth": 281,
+          "clientWidth": 281,
+          "overflowsOwnBox": false,
+          "height": 51,
+          "lineBoxes": 1,
+          "overflowWrap": "normal",
+          "wordBreak": "normal",
+          "whiteSpace": "normal"
+        },
+        {
+          "chars": 23,
+          "scrollWidth": 281,
+          "clientWidth": 281,
+          "overflowsOwnBox": false,
+          "height": 51,
+          "lineBoxes": 1,
+          "overflowWrap": "normal",
+          "wordBreak": "normal",
+          "whiteSpace": "normal"
+        },
+        {
+          "chars": 500,
+          "scrollWidth": 5142,
+          "clientWidth": 281,
+          "overflowsOwnBox": true,
+          "height": 50,
+          "lineBoxes": 1,
+          "overflowWrap": "normal",
+          "wordBreak": "normal",
+          "whiteSpace": "normal"
+        }
+      ]
+    },
+    {
+      "revision": "baseline",
+      "viewport": "mobile",
+      "viewportSize": {
+        "width": 375,
+        "height": 812
+      },
+      "scenario": "unbroken-500",
+      "colorScheme": "dark",
+      "capture": null,
       "viewportWidth": 375,
       "viewportHeight": 812,
       "documentScrollWidth": 5189,
@@ -143,7 +276,68 @@
         "height": 812
       },
       "scenario": "long-url",
-      "capture": "baseline-mobile-long-url.png",
+      "colorScheme": "light",
+      "capture": "baseline-mobile-long-url-light.png",
+      "viewportWidth": 375,
+      "viewportHeight": 812,
+      "documentScrollWidth": 3829,
+      "documentScrollHeight": 812,
+      "horizontalScroll": true,
+      "panel": {
+        "x": 24,
+        "y": 157.5,
+        "width": 327,
+        "height": 284
+      },
+      "panelScrollWidth": 3804,
+      "panelClientWidth": 325,
+      "bodyScrollWidth": 3829,
+      "items": [
+        {
+          "chars": 23,
+          "scrollWidth": 281,
+          "clientWidth": 281,
+          "overflowsOwnBox": false,
+          "height": 51,
+          "lineBoxes": 1,
+          "overflowWrap": "normal",
+          "wordBreak": "normal",
+          "whiteSpace": "normal"
+        },
+        {
+          "chars": 23,
+          "scrollWidth": 281,
+          "clientWidth": 281,
+          "overflowsOwnBox": false,
+          "height": 51,
+          "lineBoxes": 1,
+          "overflowWrap": "normal",
+          "wordBreak": "normal",
+          "whiteSpace": "normal"
+        },
+        {
+          "chars": 420,
+          "scrollWidth": 3782,
+          "clientWidth": 281,
+          "overflowsOwnBox": true,
+          "height": 50,
+          "lineBoxes": 1,
+          "overflowWrap": "normal",
+          "wordBreak": "normal",
+          "whiteSpace": "normal"
+        }
+      ]
+    },
+    {
+      "revision": "baseline",
+      "viewport": "mobile",
+      "viewportSize": {
+        "width": 375,
+        "height": 812
+      },
+      "scenario": "long-url",
+      "colorScheme": "dark",
+      "capture": null,
       "viewportWidth": 375,
       "viewportHeight": 812,
       "documentScrollWidth": 3829,
@@ -202,7 +396,68 @@
         "height": 812
       },
       "scenario": "unbroken-200",
-      "capture": "baseline-mobile-unbroken-200.png",
+      "colorScheme": "light",
+      "capture": "baseline-mobile-unbroken-200-light.png",
+      "viewportWidth": 375,
+      "viewportHeight": 812,
+      "documentScrollWidth": 2157,
+      "documentScrollHeight": 812,
+      "horizontalScroll": true,
+      "panel": {
+        "x": 24,
+        "y": 157.5,
+        "width": 327,
+        "height": 284
+      },
+      "panelScrollWidth": 2132,
+      "panelClientWidth": 325,
+      "bodyScrollWidth": 2157,
+      "items": [
+        {
+          "chars": 23,
+          "scrollWidth": 281,
+          "clientWidth": 281,
+          "overflowsOwnBox": false,
+          "height": 51,
+          "lineBoxes": 1,
+          "overflowWrap": "normal",
+          "wordBreak": "normal",
+          "whiteSpace": "normal"
+        },
+        {
+          "chars": 23,
+          "scrollWidth": 281,
+          "clientWidth": 281,
+          "overflowsOwnBox": false,
+          "height": 51,
+          "lineBoxes": 1,
+          "overflowWrap": "normal",
+          "wordBreak": "normal",
+          "whiteSpace": "normal"
+        },
+        {
+          "chars": 200,
+          "scrollWidth": 2110,
+          "clientWidth": 281,
+          "overflowsOwnBox": true,
+          "height": 50,
+          "lineBoxes": 1,
+          "overflowWrap": "normal",
+          "wordBreak": "normal",
+          "whiteSpace": "normal"
+        }
+      ]
+    },
+    {
+      "revision": "baseline",
+      "viewport": "mobile",
+      "viewportSize": {
+        "width": 375,
+        "height": 812
+      },
+      "scenario": "unbroken-200",
+      "colorScheme": "dark",
+      "capture": null,
       "viewportWidth": 375,
       "viewportHeight": 812,
       "documentScrollWidth": 2157,
@@ -261,7 +516,79 @@
         "height": 800
       },
       "scenario": "short",
-      "capture": "baseline-desktop-short.png",
+      "colorScheme": "light",
+      "capture": "baseline-desktop-short-light.png",
+      "viewportWidth": 1280,
+      "viewportHeight": 800,
+      "documentScrollWidth": 1280,
+      "documentScrollHeight": 800,
+      "horizontalScroll": false,
+      "panel": {
+        "x": 24,
+        "y": 157.5,
+        "width": 606,
+        "height": 335
+      },
+      "panelScrollWidth": 604,
+      "panelClientWidth": 604,
+      "bodyScrollWidth": 1280,
+      "items": [
+        {
+          "chars": 23,
+          "scrollWidth": 560,
+          "clientWidth": 560,
+          "overflowsOwnBox": false,
+          "height": 51,
+          "lineBoxes": 1,
+          "overflowWrap": "normal",
+          "wordBreak": "normal",
+          "whiteSpace": "normal"
+        },
+        {
+          "chars": 23,
+          "scrollWidth": 560,
+          "clientWidth": 560,
+          "overflowsOwnBox": false,
+          "height": 51,
+          "lineBoxes": 1,
+          "overflowWrap": "normal",
+          "wordBreak": "normal",
+          "whiteSpace": "normal"
+        },
+        {
+          "chars": 23,
+          "scrollWidth": 560,
+          "clientWidth": 560,
+          "overflowsOwnBox": false,
+          "height": 51,
+          "lineBoxes": 1,
+          "overflowWrap": "normal",
+          "wordBreak": "normal",
+          "whiteSpace": "normal"
+        },
+        {
+          "chars": 23,
+          "scrollWidth": 560,
+          "clientWidth": 560,
+          "overflowsOwnBox": false,
+          "height": 50,
+          "lineBoxes": 1,
+          "overflowWrap": "normal",
+          "wordBreak": "normal",
+          "whiteSpace": "normal"
+        }
+      ]
+    },
+    {
+      "revision": "baseline",
+      "viewport": "desktop",
+      "viewportSize": {
+        "width": 1280,
+        "height": 800
+      },
+      "scenario": "short",
+      "colorScheme": "dark",
+      "capture": null,
       "viewportWidth": 1280,
       "viewportHeight": 800,
       "documentScrollWidth": 1280,
@@ -331,7 +658,68 @@
         "height": 800
       },
       "scenario": "unbroken-500",
-      "capture": "baseline-desktop-unbroken-500.png",
+      "colorScheme": "light",
+      "capture": "baseline-desktop-unbroken-500-light.png",
+      "viewportWidth": 1280,
+      "viewportHeight": 800,
+      "documentScrollWidth": 5189,
+      "documentScrollHeight": 800,
+      "horizontalScroll": true,
+      "panel": {
+        "x": 24,
+        "y": 157.5,
+        "width": 606,
+        "height": 284
+      },
+      "panelScrollWidth": 5164,
+      "panelClientWidth": 604,
+      "bodyScrollWidth": 5189,
+      "items": [
+        {
+          "chars": 23,
+          "scrollWidth": 560,
+          "clientWidth": 560,
+          "overflowsOwnBox": false,
+          "height": 51,
+          "lineBoxes": 1,
+          "overflowWrap": "normal",
+          "wordBreak": "normal",
+          "whiteSpace": "normal"
+        },
+        {
+          "chars": 23,
+          "scrollWidth": 560,
+          "clientWidth": 560,
+          "overflowsOwnBox": false,
+          "height": 51,
+          "lineBoxes": 1,
+          "overflowWrap": "normal",
+          "wordBreak": "normal",
+          "whiteSpace": "normal"
+        },
+        {
+          "chars": 500,
+          "scrollWidth": 5142,
+          "clientWidth": 560,
+          "overflowsOwnBox": true,
+          "height": 50,
+          "lineBoxes": 1,
+          "overflowWrap": "normal",
+          "wordBreak": "normal",
+          "whiteSpace": "normal"
+        }
+      ]
+    },
+    {
+      "revision": "baseline",
+      "viewport": "desktop",
+      "viewportSize": {
+        "width": 1280,
+        "height": 800
+      },
+      "scenario": "unbroken-500",
+      "colorScheme": "dark",
+      "capture": null,
       "viewportWidth": 1280,
       "viewportHeight": 800,
       "documentScrollWidth": 5189,
@@ -390,7 +778,68 @@
         "height": 800
       },
       "scenario": "long-url",
-      "capture": "baseline-desktop-long-url.png",
+      "colorScheme": "light",
+      "capture": "baseline-desktop-long-url-light.png",
+      "viewportWidth": 1280,
+      "viewportHeight": 800,
+      "documentScrollWidth": 3829,
+      "documentScrollHeight": 800,
+      "horizontalScroll": true,
+      "panel": {
+        "x": 24,
+        "y": 157.5,
+        "width": 606,
+        "height": 284
+      },
+      "panelScrollWidth": 3804,
+      "panelClientWidth": 604,
+      "bodyScrollWidth": 3829,
+      "items": [
+        {
+          "chars": 23,
+          "scrollWidth": 560,
+          "clientWidth": 560,
+          "overflowsOwnBox": false,
+          "height": 51,
+          "lineBoxes": 1,
+          "overflowWrap": "normal",
+          "wordBreak": "normal",
+          "whiteSpace": "normal"
+        },
+        {
+          "chars": 23,
+          "scrollWidth": 560,
+          "clientWidth": 560,
+          "overflowsOwnBox": false,
+          "height": 51,
+          "lineBoxes": 1,
+          "overflowWrap": "normal",
+          "wordBreak": "normal",
+          "whiteSpace": "normal"
+        },
+        {
+          "chars": 420,
+          "scrollWidth": 3782,
+          "clientWidth": 560,
+          "overflowsOwnBox": true,
+          "height": 50,
+          "lineBoxes": 1,
+          "overflowWrap": "normal",
+          "wordBreak": "normal",
+          "whiteSpace": "normal"
+        }
+      ]
+    },
+    {
+      "revision": "baseline",
+      "viewport": "desktop",
+      "viewportSize": {
+        "width": 1280,
+        "height": 800
+      },
+      "scenario": "long-url",
+      "colorScheme": "dark",
+      "capture": null,
       "viewportWidth": 1280,
       "viewportHeight": 800,
       "documentScrollWidth": 3829,
@@ -449,7 +898,68 @@
         "height": 800
       },
       "scenario": "unbroken-200",
-      "capture": "baseline-desktop-unbroken-200.png",
+      "colorScheme": "light",
+      "capture": "baseline-desktop-unbroken-200-light.png",
+      "viewportWidth": 1280,
+      "viewportHeight": 800,
+      "documentScrollWidth": 2157,
+      "documentScrollHeight": 800,
+      "horizontalScroll": true,
+      "panel": {
+        "x": 24,
+        "y": 157.5,
+        "width": 606,
+        "height": 284
+      },
+      "panelScrollWidth": 2132,
+      "panelClientWidth": 604,
+      "bodyScrollWidth": 2157,
+      "items": [
+        {
+          "chars": 23,
+          "scrollWidth": 560,
+          "clientWidth": 560,
+          "overflowsOwnBox": false,
+          "height": 51,
+          "lineBoxes": 1,
+          "overflowWrap": "normal",
+          "wordBreak": "normal",
+          "whiteSpace": "normal"
+        },
+        {
+          "chars": 23,
+          "scrollWidth": 560,
+          "clientWidth": 560,
+          "overflowsOwnBox": false,
+          "height": 51,
+          "lineBoxes": 1,
+          "overflowWrap": "normal",
+          "wordBreak": "normal",
+          "whiteSpace": "normal"
+        },
+        {
+          "chars": 200,
+          "scrollWidth": 2110,
+          "clientWidth": 560,
+          "overflowsOwnBox": true,
+          "height": 50,
+          "lineBoxes": 1,
+          "overflowWrap": "normal",
+          "wordBreak": "normal",
+          "whiteSpace": "normal"
+        }
+      ]
+    },
+    {
+      "revision": "baseline",
+      "viewport": "desktop",
+      "viewportSize": {
+        "width": 1280,
+        "height": 800
+      },
+      "scenario": "unbroken-200",
+      "colorScheme": "dark",
+      "capture": null,
       "viewportWidth": 1280,
       "viewportHeight": 800,
       "documentScrollWidth": 2157,
@@ -508,7 +1018,79 @@
         "height": 812
       },
       "scenario": "short",
-      "capture": "after-mobile-short.png",
+      "colorScheme": "light",
+      "capture": "after-mobile-short-light.png",
+      "viewportWidth": 375,
+      "viewportHeight": 812,
+      "documentScrollWidth": 375,
+      "documentScrollHeight": 812,
+      "horizontalScroll": false,
+      "panel": {
+        "x": 24,
+        "y": 157.5,
+        "width": 327,
+        "height": 335
+      },
+      "panelScrollWidth": 325,
+      "panelClientWidth": 325,
+      "bodyScrollWidth": 375,
+      "items": [
+        {
+          "chars": 23,
+          "scrollWidth": 281,
+          "clientWidth": 281,
+          "overflowsOwnBox": false,
+          "height": 51,
+          "lineBoxes": 1,
+          "overflowWrap": "anywhere",
+          "wordBreak": "normal",
+          "whiteSpace": "normal"
+        },
+        {
+          "chars": 23,
+          "scrollWidth": 281,
+          "clientWidth": 281,
+          "overflowsOwnBox": false,
+          "height": 51,
+          "lineBoxes": 1,
+          "overflowWrap": "anywhere",
+          "wordBreak": "normal",
+          "whiteSpace": "normal"
+        },
+        {
+          "chars": 23,
+          "scrollWidth": 281,
+          "clientWidth": 281,
+          "overflowsOwnBox": false,
+          "height": 51,
+          "lineBoxes": 1,
+          "overflowWrap": "anywhere",
+          "wordBreak": "normal",
+          "whiteSpace": "normal"
+        },
+        {
+          "chars": 23,
+          "scrollWidth": 281,
+          "clientWidth": 281,
+          "overflowsOwnBox": false,
+          "height": 50,
+          "lineBoxes": 1,
+          "overflowWrap": "anywhere",
+          "wordBreak": "normal",
+          "whiteSpace": "normal"
+        }
+      ]
+    },
+    {
+      "revision": "after",
+      "viewport": "mobile",
+      "viewportSize": {
+        "width": 375,
+        "height": 812
+      },
+      "scenario": "short",
+      "colorScheme": "dark",
+      "capture": null,
       "viewportWidth": 375,
       "viewportHeight": 812,
       "documentScrollWidth": 375,
@@ -578,7 +1160,68 @@
         "height": 812
       },
       "scenario": "unbroken-500",
-      "capture": "after-mobile-unbroken-500.png",
+      "colorScheme": "light",
+      "capture": "after-mobile-unbroken-500-light.png",
+      "viewportWidth": 375,
+      "viewportHeight": 812,
+      "documentScrollWidth": 375,
+      "documentScrollHeight": 968,
+      "horizontalScroll": false,
+      "panel": {
+        "x": 24,
+        "y": 157.5,
+        "width": 327,
+        "height": 746
+      },
+      "panelScrollWidth": 325,
+      "panelClientWidth": 325,
+      "bodyScrollWidth": 375,
+      "items": [
+        {
+          "chars": 23,
+          "scrollWidth": 281,
+          "clientWidth": 281,
+          "overflowsOwnBox": false,
+          "height": 51,
+          "lineBoxes": 1,
+          "overflowWrap": "anywhere",
+          "wordBreak": "normal",
+          "whiteSpace": "normal"
+        },
+        {
+          "chars": 23,
+          "scrollWidth": 281,
+          "clientWidth": 281,
+          "overflowsOwnBox": false,
+          "height": 51,
+          "lineBoxes": 1,
+          "overflowWrap": "anywhere",
+          "wordBreak": "normal",
+          "whiteSpace": "normal"
+        },
+        {
+          "chars": 500,
+          "scrollWidth": 281,
+          "clientWidth": 281,
+          "overflowsOwnBox": false,
+          "height": 512,
+          "lineBoxes": 22,
+          "overflowWrap": "anywhere",
+          "wordBreak": "normal",
+          "whiteSpace": "normal"
+        }
+      ]
+    },
+    {
+      "revision": "after",
+      "viewport": "mobile",
+      "viewportSize": {
+        "width": 375,
+        "height": 812
+      },
+      "scenario": "unbroken-500",
+      "colorScheme": "dark",
+      "capture": null,
       "viewportWidth": 375,
       "viewportHeight": 812,
       "documentScrollWidth": 375,
@@ -637,7 +1280,68 @@
         "height": 812
       },
       "scenario": "long-url",
-      "capture": "after-mobile-long-url.png",
+      "colorScheme": "light",
+      "capture": "after-mobile-long-url-light.png",
+      "viewportWidth": 375,
+      "viewportHeight": 812,
+      "documentScrollWidth": 375,
+      "documentScrollHeight": 858,
+      "horizontalScroll": false,
+      "panel": {
+        "x": 24,
+        "y": 157.5,
+        "width": 327,
+        "height": 636
+      },
+      "panelScrollWidth": 325,
+      "panelClientWidth": 325,
+      "bodyScrollWidth": 375,
+      "items": [
+        {
+          "chars": 23,
+          "scrollWidth": 281,
+          "clientWidth": 281,
+          "overflowsOwnBox": false,
+          "height": 51,
+          "lineBoxes": 1,
+          "overflowWrap": "anywhere",
+          "wordBreak": "normal",
+          "whiteSpace": "normal"
+        },
+        {
+          "chars": 23,
+          "scrollWidth": 281,
+          "clientWidth": 281,
+          "overflowsOwnBox": false,
+          "height": 51,
+          "lineBoxes": 1,
+          "overflowWrap": "anywhere",
+          "wordBreak": "normal",
+          "whiteSpace": "normal"
+        },
+        {
+          "chars": 420,
+          "scrollWidth": 281,
+          "clientWidth": 281,
+          "overflowsOwnBox": false,
+          "height": 402,
+          "lineBoxes": 17,
+          "overflowWrap": "anywhere",
+          "wordBreak": "normal",
+          "whiteSpace": "normal"
+        }
+      ]
+    },
+    {
+      "revision": "after",
+      "viewport": "mobile",
+      "viewportSize": {
+        "width": 375,
+        "height": 812
+      },
+      "scenario": "long-url",
+      "colorScheme": "dark",
+      "capture": null,
       "viewportWidth": 375,
       "viewportHeight": 812,
       "documentScrollWidth": 375,
@@ -696,7 +1400,68 @@
         "height": 812
       },
       "scenario": "unbroken-200",
-      "capture": "after-mobile-unbroken-200.png",
+      "colorScheme": "light",
+      "capture": "after-mobile-unbroken-200-light.png",
+      "viewportWidth": 375,
+      "viewportHeight": 812,
+      "documentScrollWidth": 375,
+      "documentScrollHeight": 812,
+      "horizontalScroll": false,
+      "panel": {
+        "x": 24,
+        "y": 157.5,
+        "width": 327,
+        "height": 482
+      },
+      "panelScrollWidth": 325,
+      "panelClientWidth": 325,
+      "bodyScrollWidth": 375,
+      "items": [
+        {
+          "chars": 23,
+          "scrollWidth": 281,
+          "clientWidth": 281,
+          "overflowsOwnBox": false,
+          "height": 51,
+          "lineBoxes": 1,
+          "overflowWrap": "anywhere",
+          "wordBreak": "normal",
+          "whiteSpace": "normal"
+        },
+        {
+          "chars": 23,
+          "scrollWidth": 281,
+          "clientWidth": 281,
+          "overflowsOwnBox": false,
+          "height": 51,
+          "lineBoxes": 1,
+          "overflowWrap": "anywhere",
+          "wordBreak": "normal",
+          "whiteSpace": "normal"
+        },
+        {
+          "chars": 200,
+          "scrollWidth": 281,
+          "clientWidth": 281,
+          "overflowsOwnBox": false,
+          "height": 248,
+          "lineBoxes": 10,
+          "overflowWrap": "anywhere",
+          "wordBreak": "normal",
+          "whiteSpace": "normal"
+        }
+      ]
+    },
+    {
+      "revision": "after",
+      "viewport": "mobile",
+      "viewportSize": {
+        "width": 375,
+        "height": 812
+      },
+      "scenario": "unbroken-200",
+      "colorScheme": "dark",
+      "capture": null,
       "viewportWidth": 375,
       "viewportHeight": 812,
       "documentScrollWidth": 375,
@@ -755,7 +1520,79 @@
         "height": 800
       },
       "scenario": "short",
-      "capture": "after-desktop-short.png",
+      "colorScheme": "light",
+      "capture": "after-desktop-short-light.png",
+      "viewportWidth": 1280,
+      "viewportHeight": 800,
+      "documentScrollWidth": 1280,
+      "documentScrollHeight": 800,
+      "horizontalScroll": false,
+      "panel": {
+        "x": 24,
+        "y": 157.5,
+        "width": 606,
+        "height": 335
+      },
+      "panelScrollWidth": 604,
+      "panelClientWidth": 604,
+      "bodyScrollWidth": 1280,
+      "items": [
+        {
+          "chars": 23,
+          "scrollWidth": 560,
+          "clientWidth": 560,
+          "overflowsOwnBox": false,
+          "height": 51,
+          "lineBoxes": 1,
+          "overflowWrap": "anywhere",
+          "wordBreak": "normal",
+          "whiteSpace": "normal"
+        },
+        {
+          "chars": 23,
+          "scrollWidth": 560,
+          "clientWidth": 560,
+          "overflowsOwnBox": false,
+          "height": 51,
+          "lineBoxes": 1,
+          "overflowWrap": "anywhere",
+          "wordBreak": "normal",
+          "whiteSpace": "normal"
+        },
+        {
+          "chars": 23,
+          "scrollWidth": 560,
+          "clientWidth": 560,
+          "overflowsOwnBox": false,
+          "height": 51,
+          "lineBoxes": 1,
+          "overflowWrap": "anywhere",
+          "wordBreak": "normal",
+          "whiteSpace": "normal"
+        },
+        {
+          "chars": 23,
+          "scrollWidth": 560,
+          "clientWidth": 560,
+          "overflowsOwnBox": false,
+          "height": 50,
+          "lineBoxes": 1,
+          "overflowWrap": "anywhere",
+          "wordBreak": "normal",
+          "whiteSpace": "normal"
+        }
+      ]
+    },
+    {
+      "revision": "after",
+      "viewport": "desktop",
+      "viewportSize": {
+        "width": 1280,
+        "height": 800
+      },
+      "scenario": "short",
+      "colorScheme": "dark",
+      "capture": null,
       "viewportWidth": 1280,
       "viewportHeight": 800,
       "documentScrollWidth": 1280,
@@ -825,7 +1662,68 @@
         "height": 800
       },
       "scenario": "unbroken-500",
-      "capture": "after-desktop-unbroken-500.png",
+      "colorScheme": "light",
+      "capture": "after-desktop-unbroken-500-light.png",
+      "viewportWidth": 1280,
+      "viewportHeight": 800,
+      "documentScrollWidth": 1280,
+      "documentScrollHeight": 800,
+      "horizontalScroll": false,
+      "panel": {
+        "x": 24,
+        "y": 157.5,
+        "width": 606,
+        "height": 482
+      },
+      "panelScrollWidth": 604,
+      "panelClientWidth": 604,
+      "bodyScrollWidth": 1280,
+      "items": [
+        {
+          "chars": 23,
+          "scrollWidth": 560,
+          "clientWidth": 560,
+          "overflowsOwnBox": false,
+          "height": 51,
+          "lineBoxes": 1,
+          "overflowWrap": "anywhere",
+          "wordBreak": "normal",
+          "whiteSpace": "normal"
+        },
+        {
+          "chars": 23,
+          "scrollWidth": 560,
+          "clientWidth": 560,
+          "overflowsOwnBox": false,
+          "height": 51,
+          "lineBoxes": 1,
+          "overflowWrap": "anywhere",
+          "wordBreak": "normal",
+          "whiteSpace": "normal"
+        },
+        {
+          "chars": 500,
+          "scrollWidth": 560,
+          "clientWidth": 560,
+          "overflowsOwnBox": false,
+          "height": 248,
+          "lineBoxes": 10,
+          "overflowWrap": "anywhere",
+          "wordBreak": "normal",
+          "whiteSpace": "normal"
+        }
+      ]
+    },
+    {
+      "revision": "after",
+      "viewport": "desktop",
+      "viewportSize": {
+        "width": 1280,
+        "height": 800
+      },
+      "scenario": "unbroken-500",
+      "colorScheme": "dark",
+      "capture": null,
       "viewportWidth": 1280,
       "viewportHeight": 800,
       "documentScrollWidth": 1280,
@@ -884,7 +1782,68 @@
         "height": 800
       },
       "scenario": "long-url",
-      "capture": "after-desktop-long-url.png",
+      "colorScheme": "light",
+      "capture": "after-desktop-long-url-light.png",
+      "viewportWidth": 1280,
+      "viewportHeight": 800,
+      "documentScrollWidth": 1280,
+      "documentScrollHeight": 800,
+      "horizontalScroll": false,
+      "panel": {
+        "x": 24,
+        "y": 157.5,
+        "width": 606,
+        "height": 438
+      },
+      "panelScrollWidth": 604,
+      "panelClientWidth": 604,
+      "bodyScrollWidth": 1280,
+      "items": [
+        {
+          "chars": 23,
+          "scrollWidth": 560,
+          "clientWidth": 560,
+          "overflowsOwnBox": false,
+          "height": 51,
+          "lineBoxes": 1,
+          "overflowWrap": "anywhere",
+          "wordBreak": "normal",
+          "whiteSpace": "normal"
+        },
+        {
+          "chars": 23,
+          "scrollWidth": 560,
+          "clientWidth": 560,
+          "overflowsOwnBox": false,
+          "height": 51,
+          "lineBoxes": 1,
+          "overflowWrap": "anywhere",
+          "wordBreak": "normal",
+          "whiteSpace": "normal"
+        },
+        {
+          "chars": 420,
+          "scrollWidth": 560,
+          "clientWidth": 560,
+          "overflowsOwnBox": false,
+          "height": 204,
+          "lineBoxes": 8,
+          "overflowWrap": "anywhere",
+          "wordBreak": "normal",
+          "whiteSpace": "normal"
+        }
+      ]
+    },
+    {
+      "revision": "after",
+      "viewport": "desktop",
+      "viewportSize": {
+        "width": 1280,
+        "height": 800
+      },
+      "scenario": "long-url",
+      "colorScheme": "dark",
+      "capture": null,
       "viewportWidth": 1280,
       "viewportHeight": 800,
       "documentScrollWidth": 1280,
@@ -943,7 +1902,68 @@
         "height": 800
       },
       "scenario": "unbroken-200",
-      "capture": "after-desktop-unbroken-200.png",
+      "colorScheme": "light",
+      "capture": "after-desktop-unbroken-200-light.png",
+      "viewportWidth": 1280,
+      "viewportHeight": 800,
+      "documentScrollWidth": 1280,
+      "documentScrollHeight": 800,
+      "horizontalScroll": false,
+      "panel": {
+        "x": 24,
+        "y": 157.5,
+        "width": 606,
+        "height": 372
+      },
+      "panelScrollWidth": 604,
+      "panelClientWidth": 604,
+      "bodyScrollWidth": 1280,
+      "items": [
+        {
+          "chars": 23,
+          "scrollWidth": 560,
+          "clientWidth": 560,
+          "overflowsOwnBox": false,
+          "height": 51,
+          "lineBoxes": 1,
+          "overflowWrap": "anywhere",
+          "wordBreak": "normal",
+          "whiteSpace": "normal"
+        },
+        {
+          "chars": 23,
+          "scrollWidth": 560,
+          "clientWidth": 560,
+          "overflowsOwnBox": false,
+          "height": 51,
+          "lineBoxes": 1,
+          "overflowWrap": "anywhere",
+          "wordBreak": "normal",
+          "whiteSpace": "normal"
+        },
+        {
+          "chars": 200,
+          "scrollWidth": 560,
+          "clientWidth": 560,
+          "overflowsOwnBox": false,
+          "height": 138,
+          "lineBoxes": 5,
+          "overflowWrap": "anywhere",
+          "wordBreak": "normal",
+          "whiteSpace": "normal"
+        }
+      ]
+    },
+    {
+      "revision": "after",
+      "viewport": "desktop",
+      "viewportSize": {
+        "width": 1280,
+        "height": 800
+      },
+      "scenario": "unbroken-200",
+      "colorScheme": "dark",
+      "capture": null,
       "viewportWidth": 1280,
       "viewportHeight": 800,
       "documentScrollWidth": 1280,
@@ -997,10 +2017,10 @@
   ],
   "shortTitlePixelDiff": {
     "mobile": {
-      "diffBBox": null
+      "light": null
     },
     "desktop": {
-      "diffBBox": null
+      "light": null
     }
   }
 }
