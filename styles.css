@@ -175,6 +175,7 @@ main {
   border-radius: 14px;
   padding: 22px;
   max-width: 560px;
+  margin-inline: auto;
   box-shadow: var(--shadow), inset 0 1px 0 var(--panel-highlight);
 }
 
