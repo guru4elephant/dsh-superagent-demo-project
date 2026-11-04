@@ -20,6 +20,11 @@
   --page-glow-a: rgba(148, 216, 227, 0.34);
   --page-glow-b: rgba(196, 228, 246, 0.5);
   --page-glow-c: rgba(214, 240, 231, 0.55);
+  --page-canvas:
+    radial-gradient(1100px 640px at 8% -14%, var(--page-glow-a), transparent 62%),
+    radial-gradient(900px 520px at 104% 2%, var(--page-glow-b), transparent 60%),
+    radial-gradient(760px 540px at 50% 118%, var(--page-glow-c), transparent 62%),
+    linear-gradient(180deg, var(--page-top) 0%, var(--bg) 55%, var(--page-bottom) 100%);
 
   /* Header */
   --header-border: rgba(197, 217, 228, 0.7);
@@ -109,15 +114,33 @@
 body {
   margin: 0;
   min-height: 100vh;
-  background:
-    radial-gradient(1100px 640px at 8% -14%, var(--page-glow-a), transparent 62%),
-    radial-gradient(900px 520px at 104% 2%, var(--page-glow-b), transparent 60%),
-    radial-gradient(760px 540px at 50% 118%, var(--page-glow-c), transparent 62%),
-    linear-gradient(180deg, var(--page-top) 0%, var(--bg) 55%, var(--page-bottom) 100%);
+  background: var(--page-canvas);
   background-attachment: fixed;
   color: var(--text);
   font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
   -webkit-font-smoothing: antialiased;
+}
+
+/* background-attachment: fixed is only partly supported by iOS Safari, and on touch
+   devices a viewport-sized fixed gradient makes the browser repaint the whole screen
+   on every scroll frame. Touch devices paint the same canvas on a fixed, viewport-sized
+   layer instead: it stays put while scrolling, without a fixed background attachment. */
+@media screen and (hover: none) {
+  body {
+    background: none;
+  }
+
+  body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+    pointer-events: none;
+    background: var(--page-canvas);
+  }
 }
 
 ::selection {
