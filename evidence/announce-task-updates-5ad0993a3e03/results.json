@@ -1,0 +1,353 @@
+{
+  "before": {
+    "label": "before",
+    "region": {
+      "hasRegion": false
+    },
+    "initial_tree": [
+      {
+        "role": "heading",
+        "name": "Task Board",
+        "ignored": false,
+        "properties": {
+          "level": 1
+        }
+      },
+      {
+        "role": "paragraph",
+        "name": "",
+        "ignored": false,
+        "properties": {}
+      },
+      {
+        "role": "heading",
+        "name": "TODAY",
+        "ignored": false,
+        "properties": {
+          "level": 2
+        }
+      },
+      {
+        "role": "list",
+        "name": "",
+        "ignored": false,
+        "properties": {}
+      },
+      {
+        "role": "listitem",
+        "name": "",
+        "ignored": false,
+        "properties": {
+          "level": 1
+        }
+      },
+      {
+        "role": "listitem",
+        "name": "",
+        "ignored": false,
+        "properties": {
+          "level": 1
+        }
+      },
+      {
+        "role": "textbox",
+        "name": "Add a task…",
+        "ignored": false,
+        "properties": {}
+      },
+      {
+        "role": "button",
+        "name": "Add",
+        "ignored": false,
+        "properties": {}
+      }
+    ],
+    "announcements": [],
+    "final_tree": [
+      {
+        "role": "heading",
+        "name": "Task Board",
+        "ignored": false,
+        "properties": {
+          "level": 1
+        }
+      },
+      {
+        "role": "paragraph",
+        "name": "",
+        "ignored": false,
+        "properties": {}
+      },
+      {
+        "role": "heading",
+        "name": "TODAY",
+        "ignored": false,
+        "properties": {
+          "level": 2
+        }
+      },
+      {
+        "role": "list",
+        "name": "",
+        "ignored": false,
+        "properties": {}
+      },
+      {
+        "role": "listitem",
+        "name": "",
+        "ignored": false,
+        "properties": {
+          "level": 1
+        }
+      },
+      {
+        "role": "listitem",
+        "name": "",
+        "ignored": false,
+        "properties": {
+          "level": 1
+        }
+      },
+      {
+        "role": "listitem",
+        "name": "",
+        "ignored": false,
+        "properties": {
+          "level": 1
+        }
+      },
+      {
+        "role": "listitem",
+        "name": "",
+        "ignored": false,
+        "properties": {
+          "level": 1
+        }
+      },
+      {
+        "role": "listitem",
+        "name": "",
+        "ignored": false,
+        "properties": {
+          "level": 1
+        }
+      },
+      {
+        "role": "textbox",
+        "name": "Add a task…",
+        "ignored": false,
+        "properties": {}
+      },
+      {
+        "role": "button",
+        "name": "Add",
+        "ignored": false,
+        "properties": {}
+      }
+    ],
+    "list_text": "Write the project brief\nReview the design draft\nBuy milk\nCall the dentist\nShip the release notes",
+    "status_box": null,
+    "visible_status": null
+  },
+  "after": {
+    "label": "after",
+    "region": {
+      "hasRegion": true,
+      "role": "status",
+      "ariaLive": "polite"
+    },
+    "initial_tree": [
+      {
+        "role": "heading",
+        "name": "Task Board",
+        "ignored": false,
+        "properties": {
+          "level": 1
+        }
+      },
+      {
+        "role": "paragraph",
+        "name": "",
+        "ignored": false,
+        "properties": {}
+      },
+      {
+        "role": "heading",
+        "name": "TODAY",
+        "ignored": false,
+        "properties": {
+          "level": 2
+        }
+      },
+      {
+        "role": "list",
+        "name": "",
+        "ignored": false,
+        "properties": {}
+      },
+      {
+        "role": "status",
+        "name": "",
+        "ignored": false,
+        "properties": {
+          "live": "polite",
+          "atomic": true,
+          "relevant": "additions text"
+        }
+      },
+      {
+        "role": "listitem",
+        "name": "",
+        "ignored": false,
+        "properties": {
+          "level": 1
+        }
+      },
+      {
+        "role": "listitem",
+        "name": "",
+        "ignored": false,
+        "properties": {
+          "level": 1
+        }
+      },
+      {
+        "role": "textbox",
+        "name": "Add a task…",
+        "ignored": false,
+        "properties": {}
+      },
+      {
+        "role": "button",
+        "name": "Add",
+        "ignored": false,
+        "properties": {}
+      }
+    ],
+    "announcements": [
+      {
+        "source": "mutation",
+        "text": "Added \"Buy milk\". 3 tasks in the list.",
+        "at": 28.399999856948853
+      },
+      {
+        "source": "mutation",
+        "text": "Added \"Call the dentist\". 4 tasks in the list.",
+        "at": 52.89999985694885
+      },
+      {
+        "source": "mutation",
+        "text": "Added \"Ship the release notes\". 5 tasks in the list.",
+        "at": 86.19999980926514
+      }
+    ],
+    "final_tree": [
+      {
+        "role": "heading",
+        "name": "Task Board",
+        "ignored": false,
+        "properties": {
+          "level": 1
+        }
+      },
+      {
+        "role": "paragraph",
+        "name": "",
+        "ignored": false,
+        "properties": {}
+      },
+      {
+        "role": "heading",
+        "name": "TODAY",
+        "ignored": false,
+        "properties": {
+          "level": 2
+        }
+      },
+      {
+        "role": "list",
+        "name": "",
+        "ignored": false,
+        "properties": {}
+      },
+      {
+        "role": "status",
+        "name": "",
+        "ignored": false,
+        "properties": {
+          "live": "polite",
+          "atomic": true,
+          "relevant": "additions text"
+        }
+      },
+      {
+        "role": "listitem",
+        "name": "",
+        "ignored": false,
+        "properties": {
+          "level": 1
+        }
+      },
+      {
+        "role": "listitem",
+        "name": "",
+        "ignored": false,
+        "properties": {
+          "level": 1
+        }
+      },
+      {
+        "role": "listitem",
+        "name": "",
+        "ignored": false,
+        "properties": {
+          "level": 1
+        }
+      },
+      {
+        "role": "listitem",
+        "name": "",
+        "ignored": false,
+        "properties": {
+          "level": 1
+        }
+      },
+      {
+        "role": "listitem",
+        "name": "",
+        "ignored": false,
+        "properties": {
+          "level": 1
+        }
+      },
+      {
+        "role": "textbox",
+        "name": "Add a task…",
+        "ignored": false,
+        "properties": {}
+      },
+      {
+        "role": "button",
+        "name": "Add",
+        "ignored": false,
+        "properties": {}
+      }
+    ],
+    "list_text": "Write the project brief\nReview the design draft\nBuy milk\nCall the dentist\nShip the release notes",
+    "status_box": {
+      "x": 46,
+      "y": 519.5,
+      "width": 1,
+      "height": 1
+    },
+    "visible_status": {
+      "width": 1,
+      "height": 1,
+      "display": "block",
+      "position": "absolute",
+      "overflow": "hidden",
+      "clipPath": "inset(50%)",
+      "visibleText": "Added \"Ship the release notes\". 5 tasks in the list."
+    }
+  }
+}
