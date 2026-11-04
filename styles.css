@@ -321,3 +321,19 @@ button:focus-visible {
     min-height: 44px;
   }
 }
+
+/* Honour the system "reduce motion" setting: keep the layout and colours,
+   drop the fades and the button's press shift. */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    transition: none !important;
+    animation: none !important;
+    scroll-behavior: auto !important;
+  }
+
+  button:active {
+    transform: none;
+  }
+}
