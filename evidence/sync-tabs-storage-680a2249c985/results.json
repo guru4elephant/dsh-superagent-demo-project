@@ -1,0 +1,154 @@
+{
+  "before": {
+    "rev": "before",
+    "loaded": {
+      "a": [
+        "Write the project brief",
+        "Review the design draft"
+      ],
+      "b": [
+        "Write the project brief",
+        "Review the design draft"
+      ]
+    },
+    "after_a_add": {
+      "a": [
+        "Write the project brief",
+        "Review the design draft",
+        "Task from A"
+      ],
+      "b": [
+        "Write the project brief",
+        "Review the design draft"
+      ],
+      "b_synced": false
+    },
+    "after_b_add": {
+      "a": [
+        "Write the project brief",
+        "Review the design draft",
+        "Task from A"
+      ],
+      "b": [
+        "Write the project brief",
+        "Review the design draft",
+        "Task from B"
+      ],
+      "both_synced": false
+    },
+    "draft_preserved": true,
+    "focus_preserved": true,
+    "after_reload": {
+      "a": [
+        "Write the project brief",
+        "Review the design draft",
+        "Task from A",
+        "Task from A again"
+      ],
+      "b": [
+        "Write the project brief",
+        "Review the design draft",
+        "Task from A",
+        "Task from A again"
+      ]
+    },
+    "after_clear": {
+      "a": [
+        "Write the project brief",
+        "Review the design draft",
+        "Task from A",
+        "Task from A again"
+      ],
+      "b": [
+        "Write the project brief",
+        "Review the design draft",
+        "Task from A",
+        "Task from A again"
+      ]
+    },
+    "errors": []
+  },
+  "after": {
+    "rev": "after",
+    "loaded": {
+      "a": [
+        "Write the project brief",
+        "Review the design draft"
+      ],
+      "b": [
+        "Write the project brief",
+        "Review the design draft"
+      ]
+    },
+    "after_a_add": {
+      "a": [
+        "Write the project brief",
+        "Review the design draft",
+        "Task from A"
+      ],
+      "b": [
+        "Write the project brief",
+        "Review the design draft",
+        "Task from A"
+      ],
+      "b_synced": true
+    },
+    "after_b_add": {
+      "a": [
+        "Write the project brief",
+        "Review the design draft",
+        "Task from A",
+        "Task from B"
+      ],
+      "b": [
+        "Write the project brief",
+        "Review the design draft",
+        "Task from A",
+        "Task from B"
+      ],
+      "both_synced": true
+    },
+    "draft_preserved": true,
+    "focus_preserved": true,
+    "after_reload": {
+      "a": [
+        "Write the project brief",
+        "Review the design draft",
+        "Task from A",
+        "Task from B",
+        "Task from A again"
+      ],
+      "b": [
+        "Write the project brief",
+        "Review the design draft",
+        "Task from A",
+        "Task from B",
+        "Task from A again"
+      ]
+    },
+    "after_clear": {
+      "a": [
+        "Write the project brief",
+        "Review the design draft",
+        "Task from A",
+        "Task from B",
+        "Task from A again"
+      ],
+      "b": [
+        "Write the project brief",
+        "Review the design draft"
+      ]
+    },
+    "errors": []
+  },
+  "montage_sizes": {
+    "before": [
+      1878,
+      2538
+    ],
+    "after": [
+      1878,
+      2538
+    ]
+  }
+}
