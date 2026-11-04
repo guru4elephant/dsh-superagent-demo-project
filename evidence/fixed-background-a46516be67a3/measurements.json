@@ -1,0 +1,326 @@
+{
+  "ticket": "a46516be67a32a1ec1a79255b69c3279",
+  "issue": 23,
+  "baseline": {
+    "branch": "main",
+    "sha": "ac0169a3ca478111c39636db20cb24661a609b26"
+  },
+  "candidate": {
+    "branch": "agent/fix-fixed-background-a46516be67a3",
+    "sha": "2dde3cc62049dc50aecd6f023e7d97f692742607"
+  },
+  "browser": "Chromium 143.0.7499.4 (module chrome-headless-shell), Playwright 1.59 python bindings",
+  "method": {
+    "captures": "real page loaded from index.html, device_scale_factor 2, 20 seeded tasks, same viewport / scheme / touch emulation / scroll position per pair",
+    "pixel comparison": "MD5 of the PNG bytes plus per-pixel abs diff",
+    "scroll trace": "CDP Tracing (devtools.timeline, blink, cc, skia), 60 programmatic scroll steps, 60-task page, counts and durations of Paint and RasterTask events"
+  },
+  "scenarios": {
+    "before": {
+      "desktop-1280-light-top": {
+        "scrollY": 0,
+        "layout": [
+          1280,
+          800
+        ],
+        "hoverNone": false,
+        "bodyAttach": "fixed, fixed, fixed, fixed",
+        "bodyBg": "set",
+        "beforePos": "static",
+        "beforeZ": "auto",
+        "beforeInset": "auto auto auto auto",
+        "overflowX": 0,
+        "rows": 22,
+        "md5": "fca7cb6813a92a91c621229216b3122f",
+        "file": "desktop-1280-light-top--before.png"
+      },
+      "desktop-1280-light-scrolled": {
+        "scrollY": 236,
+        "layout": [
+          1280,
+          800
+        ],
+        "hoverNone": false,
+        "bodyAttach": "fixed, fixed, fixed, fixed",
+        "bodyBg": "set",
+        "beforePos": "static",
+        "beforeZ": "auto",
+        "beforeInset": "auto auto auto auto",
+        "overflowX": 0,
+        "rows": 22,
+        "md5": "a8ba12ed9ca86def5e88d250052fc0a2",
+        "file": "desktop-1280-light-scrolled--before.png"
+      },
+      "desktop-1280-dark-scrolled": {
+        "scrollY": 236,
+        "layout": [
+          1280,
+          800
+        ],
+        "hoverNone": false,
+        "bodyAttach": "fixed, fixed, fixed, fixed",
+        "bodyBg": "set",
+        "beforePos": "static",
+        "beforeZ": "auto",
+        "beforeInset": "auto auto auto auto",
+        "overflowX": 0,
+        "rows": 22,
+        "md5": "694aa0c5843689b6efe3cc30072e9767",
+        "file": "desktop-1280-dark-scrolled--before.png"
+      },
+      "desktop-1440-light-top": {
+        "scrollY": 0,
+        "layout": [
+          1440,
+          900
+        ],
+        "hoverNone": false,
+        "bodyAttach": "fixed, fixed, fixed, fixed",
+        "bodyBg": "set",
+        "beforePos": "static",
+        "beforeZ": "auto",
+        "beforeInset": "auto auto auto auto",
+        "overflowX": 0,
+        "rows": 22,
+        "md5": "918a8f63d98f9a5ce8323b0c94dd98a7",
+        "file": "desktop-1440-light-top--before.png"
+      },
+      "phone-390-light-top": {
+        "scrollY": 0,
+        "layout": [
+          390,
+          844
+        ],
+        "hoverNone": true,
+        "bodyAttach": "fixed, fixed, fixed, fixed",
+        "bodyBg": "set",
+        "beforePos": "static",
+        "beforeZ": "auto",
+        "beforeInset": "auto auto auto auto",
+        "overflowX": 0,
+        "rows": 22,
+        "md5": "1cf7e729821d67a0f0bbd7c6ed0c4678",
+        "file": "phone-390-light-top--before.png"
+      },
+      "phone-390-light-scrolled": {
+        "scrollY": 254,
+        "layout": [
+          390,
+          844
+        ],
+        "hoverNone": true,
+        "bodyAttach": "fixed, fixed, fixed, fixed",
+        "bodyBg": "set",
+        "beforePos": "static",
+        "beforeZ": "auto",
+        "beforeInset": "auto auto auto auto",
+        "overflowX": 0,
+        "rows": 22,
+        "md5": "a7f4f26499b18dae864715b96b2ebd4f",
+        "file": "phone-390-light-scrolled--before.png"
+      },
+      "phone-390-dark-scrolled": {
+        "scrollY": 254,
+        "layout": [
+          390,
+          844
+        ],
+        "hoverNone": true,
+        "bodyAttach": "fixed, fixed, fixed, fixed",
+        "bodyBg": "set",
+        "beforePos": "static",
+        "beforeZ": "auto",
+        "beforeInset": "auto auto auto auto",
+        "overflowX": 0,
+        "rows": 22,
+        "md5": "ddf4610f9ce0a65b4d710c7876012180",
+        "file": "phone-390-dark-scrolled--before.png"
+      },
+      "phone-360-light-scrolled": {
+        "scrollY": 280,
+        "layout": [
+          360,
+          780
+        ],
+        "hoverNone": true,
+        "bodyAttach": "fixed, fixed, fixed, fixed",
+        "bodyBg": "set",
+        "beforePos": "static",
+        "beforeZ": "auto",
+        "beforeInset": "auto auto auto auto",
+        "overflowX": 0,
+        "rows": 22,
+        "md5": "121dbdb9d0de3d6172f61bc5338e93e7",
+        "file": "phone-360-light-scrolled--before.png"
+      }
+    },
+    "after": {
+      "desktop-1280-light-top": {
+        "scrollY": 0,
+        "layout": [
+          1280,
+          800
+        ],
+        "hoverNone": false,
+        "bodyAttach": "fixed, fixed, fixed, fixed",
+        "bodyBg": "set",
+        "beforePos": "static",
+        "beforeZ": "auto",
+        "beforeInset": "auto auto auto auto",
+        "overflowX": 0,
+        "rows": 22,
+        "md5": "fca7cb6813a92a91c621229216b3122f",
+        "file": "desktop-1280-light-top--after.png"
+      },
+      "desktop-1280-light-scrolled": {
+        "scrollY": 236,
+        "layout": [
+          1280,
+          800
+        ],
+        "hoverNone": false,
+        "bodyAttach": "fixed, fixed, fixed, fixed",
+        "bodyBg": "set",
+        "beforePos": "static",
+        "beforeZ": "auto",
+        "beforeInset": "auto auto auto auto",
+        "overflowX": 0,
+        "rows": 22,
+        "md5": "a8ba12ed9ca86def5e88d250052fc0a2",
+        "file": "desktop-1280-light-scrolled--after.png"
+      },
+      "desktop-1280-dark-scrolled": {
+        "scrollY": 236,
+        "layout": [
+          1280,
+          800
+        ],
+        "hoverNone": false,
+        "bodyAttach": "fixed, fixed, fixed, fixed",
+        "bodyBg": "set",
+        "beforePos": "static",
+        "beforeZ": "auto",
+        "beforeInset": "auto auto auto auto",
+        "overflowX": 0,
+        "rows": 22,
+        "md5": "694aa0c5843689b6efe3cc30072e9767",
+        "file": "desktop-1280-dark-scrolled--after.png"
+      },
+      "desktop-1440-light-top": {
+        "scrollY": 0,
+        "layout": [
+          1440,
+          900
+        ],
+        "hoverNone": false,
+        "bodyAttach": "fixed, fixed, fixed, fixed",
+        "bodyBg": "set",
+        "beforePos": "static",
+        "beforeZ": "auto",
+        "beforeInset": "auto auto auto auto",
+        "overflowX": 0,
+        "rows": 22,
+        "md5": "918a8f63d98f9a5ce8323b0c94dd98a7",
+        "file": "desktop-1440-light-top--after.png"
+      },
+      "phone-390-light-top": {
+        "scrollY": 0,
+        "layout": [
+          390,
+          844
+        ],
+        "hoverNone": true,
+        "bodyAttach": "scroll",
+        "bodyBg": "none",
+        "beforePos": "fixed",
+        "beforeZ": "-1",
+        "beforeInset": "0px 0px 0px 0px",
+        "overflowX": 0,
+        "rows": 22,
+        "md5": "1cf7e729821d67a0f0bbd7c6ed0c4678",
+        "file": "phone-390-light-top--after.png"
+      },
+      "phone-390-light-scrolled": {
+        "scrollY": 254,
+        "layout": [
+          390,
+          844
+        ],
+        "hoverNone": true,
+        "bodyAttach": "scroll",
+        "bodyBg": "none",
+        "beforePos": "fixed",
+        "beforeZ": "-1",
+        "beforeInset": "0px 0px 0px 0px",
+        "overflowX": 0,
+        "rows": 22,
+        "md5": "a7f4f26499b18dae864715b96b2ebd4f",
+        "file": "phone-390-light-scrolled--after.png"
+      },
+      "phone-390-dark-scrolled": {
+        "scrollY": 254,
+        "layout": [
+          390,
+          844
+        ],
+        "hoverNone": true,
+        "bodyAttach": "scroll",
+        "bodyBg": "none",
+        "beforePos": "fixed",
+        "beforeZ": "-1",
+        "beforeInset": "0px 0px 0px 0px",
+        "overflowX": 0,
+        "rows": 22,
+        "md5": "ddf4610f9ce0a65b4d710c7876012180",
+        "file": "phone-390-dark-scrolled--after.png"
+      },
+      "phone-360-light-scrolled": {
+        "scrollY": 280,
+        "layout": [
+          360,
+          780
+        ],
+        "hoverNone": true,
+        "bodyAttach": "scroll",
+        "bodyBg": "none",
+        "beforePos": "fixed",
+        "beforeZ": "-1",
+        "beforeInset": "0px 0px 0px 0px",
+        "overflowX": 0,
+        "rows": 22,
+        "md5": "121dbdb9d0de3d6172f61bc5338e93e7",
+        "file": "phone-360-light-scrolled--after.png"
+      }
+    }
+  },
+  "scrollTrace": {
+    "dsf1-touch-before": {
+      "paint": 60,
+      "paintMs": 6.4,
+      "raster": 834,
+      "rasterMs": 767.4,
+      "paintClips": 0
+    },
+    "dsf1-touch-after": {
+      "paint": 0,
+      "paintMs": 0,
+      "raster": 20,
+      "rasterMs": 14.8,
+      "paintClips": 0
+    },
+    "dsf2-touch-before": {
+      "paint": 0,
+      "paintMs": 0,
+      "raster": 20,
+      "rasterMs": 16.6,
+      "paintClips": 0
+    },
+    "dsf2-touch-after": {
+      "paint": 0,
+      "paintMs": 0,
+      "raster": 20,
+      "rasterMs": 14.7,
+      "paintClips": 0
+    }
+  }
+}
