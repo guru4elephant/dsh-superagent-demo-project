@@ -6,6 +6,10 @@ on:
   push:
     branches: [main]
 
+# CI 只做校验，不需要写权限。
+permissions:
+  contents: read
+
 jobs:
   validate:
     name: Validate static site
