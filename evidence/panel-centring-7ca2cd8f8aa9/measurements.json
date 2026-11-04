@@ -1,0 +1,162 @@
+{
+  "before": {
+    "375": {
+      "vw": 375,
+      "panelLeft": 24,
+      "panelRight": 351,
+      "panelWidth": 327,
+      "gapLeft": 24,
+      "gapRight": 24,
+      "marginInline": "0px",
+      "textAlign": "start",
+      "h2Left": 47,
+      "firstItemLeft": 47,
+      "overflow": 0
+    },
+    "768": {
+      "vw": 768,
+      "panelLeft": 24,
+      "panelRight": 630,
+      "panelWidth": 606,
+      "gapLeft": 24,
+      "gapRight": 138,
+      "marginInline": "0px",
+      "textAlign": "start",
+      "h2Left": 47,
+      "firstItemLeft": 47,
+      "overflow": 0
+    },
+    "1024": {
+      "vw": 1024,
+      "panelLeft": 24,
+      "panelRight": 630,
+      "panelWidth": 606,
+      "gapLeft": 24,
+      "gapRight": 394,
+      "marginInline": "0px",
+      "textAlign": "start",
+      "h2Left": 47,
+      "firstItemLeft": 47,
+      "overflow": 0
+    },
+    "1280": {
+      "vw": 1280,
+      "panelLeft": 24,
+      "panelRight": 630,
+      "panelWidth": 606,
+      "gapLeft": 24,
+      "gapRight": 650,
+      "marginInline": "0px",
+      "textAlign": "start",
+      "h2Left": 47,
+      "firstItemLeft": 47,
+      "overflow": 0
+    },
+    "1440": {
+      "vw": 1440,
+      "panelLeft": 24,
+      "panelRight": 630,
+      "panelWidth": 606,
+      "gapLeft": 24,
+      "gapRight": 810,
+      "marginInline": "0px",
+      "textAlign": "start",
+      "h2Left": 47,
+      "firstItemLeft": 47,
+      "overflow": 0
+    },
+    "1920": {
+      "vw": 1920,
+      "panelLeft": 24,
+      "panelRight": 630,
+      "panelWidth": 606,
+      "gapLeft": 24,
+      "gapRight": 1290,
+      "marginInline": "0px",
+      "textAlign": "start",
+      "h2Left": 47,
+      "firstItemLeft": 47,
+      "overflow": 0
+    }
+  },
+  "after": {
+    "375": {
+      "vw": 375,
+      "panelLeft": 24,
+      "panelRight": 351,
+      "panelWidth": 327,
+      "gapLeft": 24,
+      "gapRight": 24,
+      "marginInline": "0px",
+      "textAlign": "start",
+      "h2Left": 47,
+      "firstItemLeft": 47,
+      "overflow": 0
+    },
+    "768": {
+      "vw": 768,
+      "panelLeft": 81,
+      "panelRight": 687,
+      "panelWidth": 606,
+      "gapLeft": 81,
+      "gapRight": 81,
+      "marginInline": "57px",
+      "textAlign": "start",
+      "h2Left": 104,
+      "firstItemLeft": 104,
+      "overflow": 0
+    },
+    "1024": {
+      "vw": 1024,
+      "panelLeft": 209,
+      "panelRight": 815,
+      "panelWidth": 606,
+      "gapLeft": 209,
+      "gapRight": 209,
+      "marginInline": "185px",
+      "textAlign": "start",
+      "h2Left": 232,
+      "firstItemLeft": 232,
+      "overflow": 0
+    },
+    "1280": {
+      "vw": 1280,
+      "panelLeft": 337,
+      "panelRight": 943,
+      "panelWidth": 606,
+      "gapLeft": 337,
+      "gapRight": 337,
+      "marginInline": "313px",
+      "textAlign": "start",
+      "h2Left": 360,
+      "firstItemLeft": 360,
+      "overflow": 0
+    },
+    "1440": {
+      "vw": 1440,
+      "panelLeft": 417,
+      "panelRight": 1023,
+      "panelWidth": 606,
+      "gapLeft": 417,
+      "gapRight": 417,
+      "marginInline": "393px",
+      "textAlign": "start",
+      "h2Left": 440,
+      "firstItemLeft": 440,
+      "overflow": 0
+    },
+    "1920": {
+      "vw": 1920,
+      "panelLeft": 657,
+      "panelRight": 1263,
+      "panelWidth": 606,
+      "gapLeft": 657,
+      "gapRight": 657,
+      "marginInline": "633px",
+      "textAlign": "start",
+      "h2Left": 680,
+      "firstItemLeft": 680,
+      "overflow": 0
+    }
+  }
+}
