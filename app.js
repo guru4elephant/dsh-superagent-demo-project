@@ -11,10 +11,23 @@ function newId() {
     : `${Date.now()}-${Math.random().toString(36).slice(2, 8)}`;
 }
 
+// Returns a usable task from a stored entry, or null when the entry is corrupt.
+function normalizeTask(entry) {
+  if (entry === null || typeof entry !== 'object' || Array.isArray(entry)) return null;
+  if (typeof entry.title !== 'string' || entry.title.trim() === '') return null;
+  const id = entry.id;
+  const hasId = (typeof id === 'number' && Number.isFinite(id)) ||
+    (typeof id === 'string' && id !== '');
+  return { id: hasId ? id : newId(), title: entry.title.trim() };
+}
+
 function loadTasks() {
   try {
     const saved = JSON.parse(localStorage.getItem(STORAGE_KEY));
-    if (Array.isArray(saved)) return saved;
+    if (Array.isArray(saved)) {
+      const cleaned = saved.map(normalizeTask).filter(Boolean);
+      if (cleaned.length > 0) return cleaned;
+    }
   } catch (error) {
     // Storage blocked or data corrupted: fall back to the defaults.
   }
