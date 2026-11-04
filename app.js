@@ -41,6 +41,14 @@ function render() {
   }
 }
 
+function announce(message) {
+  document.getElementById('status').textContent = message;
+}
+
+function taskCountLabel(count) {
+  return `${count} ${count === 1 ? 'task' : 'tasks'}`;
+}
+
 document.getElementById('add-form').addEventListener('submit', (event) => {
   event.preventDefault();
   const input = document.getElementById('task-input');
@@ -50,6 +58,7 @@ document.getElementById('add-form').addEventListener('submit', (event) => {
   saveTasks();
   input.value = '';
   render();
+  announce(`Added "${title}". ${taskCountLabel(tasks.length)} in the list.`);
 });
 
 render();
