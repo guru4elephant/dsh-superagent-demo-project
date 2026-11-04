@@ -12,7 +12,9 @@ function loadTasks() {
   } catch (error) {
     // Storage blocked or data corrupted: fall back to the defaults.
   }
-  return defaultTasks;
+  // Return a copy: this page rewrites the list in place, and the fallback
+  // must stay intact for the next load.
+  return defaultTasks.slice();
 }
 
 function saveTasks() {
@@ -43,6 +45,17 @@ document.getElementById('add-form').addEventListener('submit', (event) => {
   tasks.push({ id: Date.now(), title });
   saveTasks();
   input.value = '';
+  render();
+});
+
+// Another tab changed the shared list. Adopt it here as well, otherwise this
+// tab's next save would silently overwrite the tasks it never saw.
+window.addEventListener('storage', (event) => {
+  // A null key means the whole storage area was cleared, so reload too.
+  if (event.key !== null && event.key !== STORAGE_KEY) return;
+  const next = loadTasks();
+  tasks.length = 0;
+  tasks.push(...next);
   render();
 });
 
