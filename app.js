@@ -5,6 +5,12 @@ const defaultTasks = [
   { id: 2, title: 'Review the design draft' },
 ];
 
+function newId() {
+  return typeof crypto !== 'undefined' && crypto.randomUUID
+    ? crypto.randomUUID()
+    : `${Date.now()}-${Math.random().toString(36).slice(2, 8)}`;
+}
+
 function loadTasks() {
   try {
     const saved = JSON.parse(localStorage.getItem(STORAGE_KEY));
@@ -40,7 +46,7 @@ document.getElementById('add-form').addEventListener('submit', (event) => {
   const input = document.getElementById('task-input');
   const title = input.value.trim();
   if (!title) return;
-  tasks.push({ id: Date.now(), title });
+  tasks.push({ id: newId(), title });
   saveTasks();
   input.value = '';
   render();
