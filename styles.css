@@ -307,3 +307,15 @@ button:focus-visible {
   outline: 2px solid var(--cyan);
   outline-offset: 2px;
 }
+
+@media (max-width: 640px) {
+  main {
+    padding: 28px 16px 64px;
+  }
+
+  #task-input,
+  button {
+    box-sizing: border-box;
+    min-height: 44px;
+  }
+}
